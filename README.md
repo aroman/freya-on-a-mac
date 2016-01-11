@@ -39,6 +39,7 @@ Your Mac must not have a Core 2 duo or Solo (or older) processor - only the past
 
 ## Common issues
 ### rEFInd hangs for upwards of 20 seconds on start
+After installing rEFInd on OS X:  
 1. Mount your ESP partition (`$ mkdir /Volumes/ESP && sudo mount -t msdos /dev/disk0s1 /Volumes/ESP/`)
 2. Rename the refind directory (`$ mv /Volumes/ESP/EFI/refind /Volumes/ESP/EFI/BOOT`)
 3. Rename the refind EFI blob (`$ mv /Volumes/ESP/EFI/BOOT/refind_x64.efi /Volumes/ESP/EFI/BOOT/bootx64.efi`)
