@@ -19,9 +19,6 @@ Your Mac must not have a Core 2 duo or Solo (or older) processor - only the past
 0. No really, make sure you have a working backup. This procedure has been tested multiple times, but it's still possible things will go wrong and lose data.
 1. Download rEFInd (http://www.rodsbooks.com/refind/getting.html) as a "Binary zip file" and decompress it. Open Terminal and cd into the decompressed folder.
 2. Install rEFInd to the ESP partition (`$ ./refind-install --alldrivers`)
-3. Mount your ESP partition (`$ mkdir /Volumes/ESP && sudo mount -t msdos /dev/disk0s1 /Volumes/ESP/`)
-4. Rename the refind directory (`$ mv /Volumes/ESP/EFI/refind /Volumes/ESP/EFI/BOOT`)
-5. Rename the refind EFI blob (`$ mv /Volumes/ESP/EFI/BOOT/refind_x64.efi /Volumes/ESP/EFI/BOOT/bootx64.efi`)
 6. Fire up Disk Utility and make a new partition/replace your old Linux install partition with a new partition formatted as FAT. Name it something catchy, like "FREYA" (it'll be overwritten in step #14)
 7. Plug your USB drive with elementary OS Freya (If you need to make one, check the [Create elementary OS Installer](https://github.com/linusbobcat/create-elementary-os-installer/releases/) or [this](https://github.com/aroman/freya-on-a-mac/tree/master/iso-to-usb) for a more-stable manual guide) into your computer.
 8. Pray
@@ -39,3 +36,9 @@ Your Mac must not have a Core 2 duo or Solo (or older) processor - only the past
 20. (optional) If you're using a pre-release build for the install, like Beta 1, the WiFi may not work out of the box. In this case you need to install the related drivers manually:
     - *Somehow* get a temporary internet connection, e.g. via your smartphone's USB/Bluetooth tethering function or (*not tested yet!*) a [Thunderbold to RJ45 adapter](http://store.apple.com/us/product/MD463ZM/A/thunderbolt-to-gigabit-ethernet-adapter)
     - execute `sudo apt-get install bcmwl-kernel-source` in a terminal to install the driver and its dependencies
+
+## Common issues
+### rEFInd hangs for upwards of 20 seconds on start
+1. Mount your ESP partition (`$ mkdir /Volumes/ESP && sudo mount -t msdos /dev/disk0s1 /Volumes/ESP/`)
+2. Rename the refind directory (`$ mv /Volumes/ESP/EFI/refind /Volumes/ESP/EFI/BOOT`)
+3. Rename the refind EFI blob (`$ mv /Volumes/ESP/EFI/BOOT/refind_x64.efi /Volumes/ESP/EFI/BOOT/bootx64.efi`)
