@@ -1,4 +1,4 @@
-### elementary OS Freya on a Mac (using rEFInd & EFI stub loading)
+### elementary OS on a Mac (using rEFInd & EFI stub loading)
 
 **NOTE**: I'm making a few assumptions about the way your computer is set up. Namely:
 
@@ -6,18 +6,18 @@
 (If it's not, make sure you use the proper location. It should be though.)
 ![wheres-esp](img/wheres-esp.png)
 
-#### I assume you don't have FileVault2/full disk encryption on
+#### I assume you don't have FileVault2 (full disk encryption) on
 (Actually this *should* work with FDE on, but it's more complicated)
 ![no-fde](img/no-fde.png)
 
-#### I assume your computer is relatively new
+#### I assume your computer is relatively new (2012 or newer)
 Your Mac must not have a Core 2 duo or Solo (or older) processor - only the past couple years of Macs, which have 64-bit EFI, are supported.
 
-**SECOND NOTE**: For those who don't know this, a dollar sign ($) indicates that you type the command into a Terminal window. You do not copy the dollar sign.
+**SECOND NOTE**: For those who don't know this, a dollar sign ($) indicates that you type the command into a Terminal window. You do not copy the dollar sign. :-)
 
-0. Back your shit up
-0. No really, make sure you have a working backup. This procedure has been tested multiple times, but it's still possible things will go wrong and lose data.
-1. Download rEFInd (http://www.rodsbooks.com/refind/getting.html) as a "Binary zip file" and decompress it. Open Terminal and cd into the decompressed folder.
+0. Back your computer up!
+0. No really, make sure you have a backup, and make sure to test that it works. This procedure has been tested multiple times, but it's still possible things will go wrong and lose data. On macOS, Time Machine is a great option for backing your computer up.
+1. Download rEFInd (http://www.rodsbooks.com/refind/getting.html) as a "binary zip file" and decompress it. Open Terminal and `cd` into the decompressed folder.
 2. Install rEFInd to the ESP partition (`$ ./refind-install --alldrivers`)
 3. Mount your ESP partition (`$ mkdir /Volumes/ESP && sudo mount -t msdos /dev/disk0s1 /Volumes/ESP/`)
 4. Rename the refind directory (`$ mv /Volumes/ESP/EFI/refind /Volumes/ESP/EFI/BOOT`)
