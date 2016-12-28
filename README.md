@@ -15,7 +15,7 @@ At the time of writing (December 2016), these very new models have limited funct
 
 0. Back your computer up!
 0. No really, make sure you have a backup, and make sure to test that it works. This procedure has been tested multiple times, but it's still possible things will go wrong and lose data. On macOS, Time Machine is a great option for backing your computer up.
-1. Download rEFInd (http://www.rodsbooks.com/refind/getting.html) as a "binary zip file" and decompress it. Open Terminal and `cd` into the decompressed folder.
+1. [Download rEFInd](http://www.rodsbooks.com/refind/getting.html) as a "binary zip file" and decompress it. Open Terminal and `cd` into the decompressed folder.
 2. Install rEFInd to the ESP partition (`$ ./refind-install --alldrivers`)
 3. Mount your ESP partition (`$ sudo ./mountesp`)
 4. Rename the refind directory (`$ mv /Volumes/ESP/EFI/refind /Volumes/ESP/EFI/BOOT`)
