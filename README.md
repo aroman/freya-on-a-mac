@@ -61,6 +61,7 @@ At the time of writing (December 2016), these very new models have limited funct
 1. More details on the [elementary Install Guide][install-medium]
 
 ### Install elementary OS
+
 1. Shut off your Mac and plug in the USB flash drive you created with elementary OS on it.
 
 1. Holding down the **option** key on your keyboard, press the power button to turn on your computer.
@@ -104,7 +105,16 @@ I am personally offended by the ugliness of the rEFInd menu
 Sorry you're so sensitive. You can install a [theme][theme] to make it look nicer, and there's many options for customizing rEFInd's behavior too. Here's what my setup looks like:
 ![no-fde](img/finished-product.jpg)
 
-## <a id="post-install">Post Install</a>   
+## <a id="post-install">Post Install</a>
+
+* [MacOS Modifier keys ][mac-os-keys]
+* f.lux
+* Guake Terminal
+* bash-it
+* Code Editor
+* Github
+* linux-brew?
+
 
 ## <a id="troubleshooting">Troubleshooting</a>
 
@@ -124,16 +134,19 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 0. Rename the refind EFI blob (`$ mv /Volumes/ESP/EFI/BOOT/refind_x64.efi /Volumes/ESP/EFI/BOOT/bootx64.efi`)
 0. Reboot and see if your problem is fixed.
 
-## <a id="resources">Additional Resources</a> 
+## <a id="resources">Additional Resources</a>
+
+* [Elementary Swith From Mac Guide][mac-switch-guide]
+* [Elementary Keyboard Shortcuts ][keys]
+* [rEFInd Theme][theme]
 
 [refind]: https://sourceforge.net/projects/refind/files/latest/download
 [timemachine]: https://support.apple.com/en-us/HT201250
 [elementary]: https://elementary.io
-[3]: https://www.youtube.com/watch?v=ssKpGeJ--UY&feature=youtu.be
 [etcher]: https://etcher.io/
-[5]: https://elementaryos.stackexchange.com/questions/7889/use-macos-style-modifier-keys
+[mac-os-keys]: https://elementaryos.stackexchange.com/questions/7889/use-macos-style-modifier-keys
 [install-medium]: https://elementary.io/docs/installation#creating-an-installation-medium
-[7]: http://lmelinux.net/2014/07/26/elementary-os-keyboard-shortcuts/
-[8]: http://blog.elementary.io/post/152626170946/switching-from-macos-the-basics
+[keys]: http://lmelinux.net/2014/07/26/elementary-os-keyboard-shortcuts/
+[mac-switch-guide]: http://blog.elementary.io/post/152626170946/switching-from-macos-the-basics
 [theme]: http://sdbinwiiexe.deviantart.com/art/rEFInd-Next-Theme-407754566
 [flash]: https://en.wikipedia.org/wiki/USB_flash_drive
