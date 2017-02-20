@@ -4,7 +4,7 @@
 1. [Before We Begin](#before-we-begin)
 1. [Tools You'll Need](#tools-youll-need)
 1. [Instructions](#instructions)
-1. [Theming rEFInd](#theming)  
+1. [Theming rEFInd](#theming)
 1. [Post-Install](#post-install)
 1. [Troubleshooting](#troubleshooting)
 1. [Resources](#resources)
@@ -28,7 +28,7 @@ At the time of writing (December 2016), these very new models have limited funct
 
 ## <a id="tools-youll-need">Tools You'll Need</a>
 
-1. [rEFInd][refind] 
+1. [rEFInd][refind]
 1. [USB Thumb Drive][flash]
 1. Lots of patience!
 
@@ -71,7 +71,7 @@ At the time of writing (December 2016), these very new models have limited funct
 1. After choosing to boot elementary OS, you'll be given a few options as to how to boot the installer. Choose **Try Elementary OS**.
 
 1. Once elementary OS finishes booting up, open **Terminal** and run `$ ubiquity -b`. This will launch the graphical elementary OS installer. When the installer asks about partitioning, make sure you choose **Something Else...**.
-  
+
     * Note for advanced users: the `-b` flag tells the installer to install *without* installing the GRUB boot-loader. This guide makes use of [EFI stub loading](https://wiki.debian.org/EFIStub), which allows a capable boot manager (such as **rEFInd**, which we'll set up later) to launch the Linux kernel directly, without an intermediary boot-loader (e.g. GRUB).
 
 1. You should see some free space at the end your hard drive partition list (`/dev/sda`), about the size you freed up when you shrunk your macOS partition. Choose this free space, and format it as **Ext4** and set its **mount point** to `/`. Choose **Apply**, and finish installing elementary OS.
@@ -100,9 +100,7 @@ At the time of writing (December 2016), these very new models have limited funct
 
 ## <a id="theming">Theming rEFInd</a>
 
-I am personally offended by the ugliness of the rEFInd menu
-
-Sorry you're so sensitive. You can install a [theme][theme] to make it look nicer, and there's many options for customizing rEFInd's behavior too. Here's what my setup looks like:
+You can install a [theme][theme] to make it look nicer, and there's many options for customizing rEFInd's behavior too. Here's what my setup looks like:
 ![no-fde](img/finished-product.jpg)
 
 ## <a id="post-install">Post Install</a>
@@ -137,7 +135,7 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 ## <a id="resources">Additional Resources</a>
 
 * [Elementary Swith From Mac Guide][mac-switch-guide]
-* [Elementary Keyboard Shortcuts ][keys]
+* [Elementary Keyboard Shortcuts ][keyboard-shortcuts]
 * [rEFInd Theme][theme]
 
 [refind]: https://sourceforge.net/projects/refind/files/latest/download
@@ -146,7 +144,7 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 [etcher]: https://etcher.io/
 [mac-os-keys]: https://elementaryos.stackexchange.com/questions/7889/use-macos-style-modifier-keys
 [install-medium]: https://elementary.io/docs/installation#creating-an-installation-medium
-[keys]: http://lmelinux.net/2014/07/26/elementary-os-keyboard-shortcuts/
+[keyboard-shortcuts]: http://lmelinux.net/2014/07/26/elementary-os-keyboard-shortcuts/
 [mac-switch-guide]: http://blog.elementary.io/post/152626170946/switching-from-macos-the-basics
 [theme]: http://sdbinwiiexe.deviantart.com/art/rEFInd-Next-Theme-407754566
 [flash]: https://en.wikipedia.org/wiki/USB_flash_drive
