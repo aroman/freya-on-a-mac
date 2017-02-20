@@ -4,10 +4,11 @@
 1. [Before We Begin](#before-we-begin)
 1. [Tools You'll Need](#tools-youll-need)
 1. [Instructions](#instructions)
+1. [Theming rEFInd](#theming)  
+1. [Post-Install](#post-install)
 1. [Troubleshooting](#troubleshooting)
 1. [Resources](#resources)
-1. [Post-Install](#post-install)
-1. [Theming rEFInd](#theming)
+
 
 ## <a id="before-we-begin">Before We Begin</a>
 
