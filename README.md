@@ -27,6 +27,7 @@ Your Mac must not have a Core 2 duo or Solo (or older) processor. Only the past 
 At the time of writing (December 2016), these very new models have limited functionality under elementary OS.
 
 ## <a id="tools-youll-need">Tools You'll Need</a>
+
 1. [rEFInd][refind] 
 1. [USB Thumb Drive][flash]
 1. Lots of patience!
@@ -35,16 +36,31 @@ At the time of writing (December 2016), these very new models have limited funct
 
 **NOTE**: For those who don't know this, a dollar sign (`$`) indicates that you type the command into a Terminal window. You do not copy the dollar sign :-)
 
+### Prep Your Mac Hard Drive
+
 1. Back your computer up.
 
-1. No, really! Make sure you have a backup, and make sure to test that it works. This procedure has been tested multiple times, but there's still a chance something could go wrong and you could lose data. On macOS, [Time Machine](https://support.apple.com/en-us/HT201250) is a great option for backing your computer up.
+1. No, really! Make sure you have a backup, and make sure to test that it works. This procedure has been tested multiple times, but there's still a chance something could go wrong and you could lose data. On macOS, [Time Machine][timemachine] is a great option for backing your computer up.
 
 1. Shrink your macOS partition to make room for elementary OS. At least 30 GB is a reasonable minimum.
   - If you plan on using elementary OS as your primary OS, you'll want to give it much more, of course. Once you decide what size you want to resize your macOS partition down to, you can resize it with this command: `$ diskutil cs resizeStack / XXXg`, where XXX is the desired number of GB your macOS partition will be resized down to.
   - For example, if your Mac has a 500 GB internal hard drive, you might decide to allocate 300 GB for macOS, and 200 GB for elementary OS. You'd then issue this command: `$ diskutil cs resizeStack / 300g`.
 
-1. [Download][elementary] elementary OS and [load it][install-medium] onto a [USB flash drive][flash].
+### Get elementary OS
 
+1. Download the iso from [elementary os][elementary].
+
+1. Verify the download by running this command from terminal:
+
+1. ```shasum -a 256 ~/Downloads/elementaryos-0.4-stable-amd64.20160921.iso```
+
+1. Should result `8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf`
+
+1. Create a Bootable USB using [Etcher][etcher]
+
+1. More details on the [elementary Install Guide][install-medium]
+
+### Install elementary OS
 1. Shut off your Mac and plug in the USB flash drive you created with elementary OS on it.
 
 1. Holding down the **option** key on your keyboard, press the power button to turn on your computer.
@@ -54,13 +70,16 @@ At the time of writing (December 2016), these very new models have limited funct
 1. After choosing to boot elementary OS, you'll be given a few options as to how to boot the installer. Choose **Try Elementary OS**.
 
 1. Once elementary OS finishes booting up, open **Terminal** and run `$ ubiquity -b`. This will launch the graphical elementary OS installer. When the installer asks about partitioning, make sure you choose **Something Else...**.
-  - Note for advanced users: the `-b` flag tells the installer to install *without* installing the GRUB boot-loader. This guide makes use of [EFI stub loading](https://wiki.debian.org/EFIStub), which allows a capable boot manager (such as **rEFInd**, which we'll set up later) to launch the Linux kernel directly, without an intermediary boot-loader (e.g. GRUB).
+  
+    * Note for advanced users: the `-b` flag tells the installer to install *without* installing the GRUB boot-loader. This guide makes use of [EFI stub loading](https://wiki.debian.org/EFIStub), which allows a capable boot manager (such as **rEFInd**, which we'll set up later) to launch the Linux kernel directly, without an intermediary boot-loader (e.g. GRUB).
 
 1. You should see some free space at the end your hard drive partition list (`/dev/sda`), about the size you freed up when you shrunk your macOS partition. Choose this free space, and format it as **Ext4** and set its **mount point** to `/`. Choose **Apply**, and finish installing elementary OS.
 
+### Install reFInd Boot Manager
+
 1. Restart your computer and boot back into macOS. At this point, elementary OS is installed, but you can't boot into it yet, because you haven't installed a boot manager. That's the next step!
 
-1. [Download](https://sourceforge.net/projects/refind/files/latest/download) the **rEFInd** boot manager and unzip it. Drag the unzipped folder onto your desktop.
+1. [Download][refind] the **rEFInd** boot manager and unzip it. Drag the unzipped folder onto your desktop.
 
 1. Turn off your Mac.
 
@@ -108,9 +127,10 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 ## <a id="resources">Additional Resources</a> 
 
 [refind]: https://sourceforge.net/projects/refind/files/latest/download
+[timemachine]: https://support.apple.com/en-us/HT201250
 [elementary]: https://elementary.io
 [3]: https://www.youtube.com/watch?v=ssKpGeJ--UY&feature=youtu.be
-[4]: https://etcher.io/
+[etcher]: https://etcher.io/
 [5]: https://elementaryos.stackexchange.com/questions/7889/use-macos-style-modifier-keys
 [install-medium]: https://elementary.io/docs/installation#creating-an-installation-medium
 [7]: http://lmelinux.net/2014/07/26/elementary-os-keyboard-shortcuts/
