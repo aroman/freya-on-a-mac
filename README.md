@@ -1,6 +1,7 @@
 # Installing elementary OS alongside macOS
 
 ## Table of Contents
+
 1. [Before We Begin](#before-we-begin)
 1. [Tools You'll Need](#tools-youll-need)
 1. [Instructions](#instructions)
@@ -48,17 +49,17 @@ At the time of writing (December 2016), these very new models have limited funct
 
 ### Get elementary OS
 
-1. Download the iso from [elementary os][elementary].
+1. Download the iso from [elementary OS][elementary].
 
 1. Verify the download by running this command from terminal:
 
 1. ```shasum -a 256 ~/Downloads/elementaryos-0.4-stable-amd64.20160921.iso```
 
-1. Should result `8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf`
+1. Should give you the result `8035e0a2fbc977d931af22dcefb77ed6fe87815d89188a43e2cb345f13e629cf`
 
 1. Create a Bootable USB using [Etcher][etcher]
 
-1. More details on the [elementary Install Guide][install-medium]
+1. More details on the [elementary OS Install Guide][install-medium]
 
 ### Install elementary OS
 
@@ -105,14 +106,13 @@ You can install a [theme][theme] to make it look nicer, and there's many options
 
 ## <a id="post-install">Post Install</a>
 
-* [MacOS Modifier keys ][mac-os-keys]
-* f.lux
-* Guake Terminal
-* bash-it
-* Code Editor
-* Github
-* linux-brew?
+[MacOS Modifier keys ][mac-os-keys] <small>create macOS like keyboard bindings </small>
 
+[f.lux][flux] <small>plugin to help alleviate eye-strain</small>
+
+[bash-it][bashit] <small>make your bash shell awesome</small>
+
+[linux-brew][brew] <small>package manager for linux</small>
 
 ## <a id="troubleshooting">Troubleshooting</a>
 
@@ -148,3 +148,6 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 [mac-switch-guide]: http://blog.elementary.io/post/152626170946/switching-from-macos-the-basics
 [theme]: http://sdbinwiiexe.deviantart.com/art/rEFInd-Next-Theme-407754566
 [flash]: https://en.wikipedia.org/wiki/USB_flash_drive
+[brew]: http://linuxbrew.sh/
+[bashit]: https://github.com/Bash-it/bash-it
+[flux]: https://justgetflux.com/linux.html
