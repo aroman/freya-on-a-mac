@@ -1,7 +1,7 @@
 # Installing elementary OS alongside macOS
 
 ## Table of Contents
-1. [Before We begin](#before-we-begin)
+1. [Before We Begin](#before-we-begin)
 1. [Tools You'll Need](#tools-youll-need)
 1. [Instructions](#instructions)
 1. [Troubleshooting](#troubleshooting)
@@ -9,7 +9,7 @@
 1. [Post-Install](#post-install)
 1. [Theming rEFInd](#theming)
 
-## [Before we begin]<a id="before-we-begin"></a>
+## <a id="before-we-begin">Before We Begin</a>
 
 This guide makes a few assumptions about the Mac you're using. Before we you begin, make sure:
 
@@ -25,12 +25,12 @@ Your Mac must not have a Core 2 duo or Solo (or older) processor. Only the past 
 ### Your Mac is not a 2015/2016 MacBook or 2016 MacBook Pro
 At the time of writing (December 2016), these very new models have limited functionality under elementary OS.
 
-## [Tools You'll Need]<a id="tools-youll-need"></a>
+## <a id="tools-youll-need">Tools You'll Need</a>
 1. [rEFInd][refind] 
 1. [USB Thumb Drive][flash]
 1. Lots of patience!
 
-## [Instructions]<a id="instructions"></a>
+## <a id="instructions">Instructions</a>
 
 **NOTE**: For those who don't know this, a dollar sign (`$`) indicates that you type the command into a Terminal window. You do not copy the dollar sign :-)
 
@@ -77,14 +77,16 @@ At the time of writing (December 2016), these very new models have limited funct
 
 1. You should now see the rEFInd menu, which options to boot elementary OS and macOS.  Congrats! You're all set.
 
-## [Theming rEFInd]<a id="theming"></a>
+## <a id="theming">Theming rEFInd</a>
 
 I am personally offended by the ugliness of the rEFInd menu
 
 Sorry you're so sensitive. You can install a [theme][theme] to make it look nicer, and there's many options for customizing rEFInd's behavior too. Here's what my setup looks like:
 ![no-fde](img/finished-product.jpg)
 
-## [Troubleshooting]<a id="troubleshooting"></a>
+## <a id="post-install">Post Install</a>   
+
+## <a id="troubleshooting">Troubleshooting</a>
 
 ### My Wi-Fi isn't working
 
@@ -102,9 +104,7 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 0. Rename the refind EFI blob (`$ mv /Volumes/ESP/EFI/BOOT/refind_x64.efi /Volumes/ESP/EFI/BOOT/bootx64.efi`)
 0. Reboot and see if your problem is fixed.
 
-
-
-## [Additional Resources]<a id="resources"></a>
+## <a id="resources">Additional Resources</a> 
 
 [refind]: https://sourceforge.net/projects/refind/files/latest/download
 [elementary]: https://elementary.io
