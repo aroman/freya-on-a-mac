@@ -29,8 +29,10 @@ At the time of writing (December 2016), these very new models have limited funct
 
 ## <a id="tools-youll-need">Tools You'll Need</a>
 
-1. [rEFInd][refind]
-1. [USB Thumb Drive][flash]
+1. At least 15GB of extra disk space on your Mac
+1. [elementary OS][elementary] iso
+1. [rEFInd][refind] Boot Manager
+1. [USB Thumb Drive][flash] at least 2GB capacity
 1. Lots of patience!
 
 ## <a id="instructions">Instructions</a>
@@ -106,6 +108,8 @@ You can install a [theme][theme] to make it look nicer, and there's many options
 
 ## <a id="post-install">Post Install</a>
 
+These are **optional** tweaks that will help you feel more are home.
+
 [MacOS Modifier keys ][mac-os-keys] <small>create macOS like keyboard bindings </small>
 
 [f.lux][flux] <small>plugin to help alleviate eye-strain</small>
@@ -127,14 +131,15 @@ Sometimes Wi-Fi might not work out-of-the-box because the necessary driver isn't
 
 This is a known compatibility issue with rEFInd and some Mac hardware models. If you experience this problem, try the following steps:
 
-0. Mount your EFI System Partition (ESP), which is where rEFInd is installed. (`$ sudo ./mountesp`)
-0. Rename the refind directory (`$ mv /Volumes/ESP/EFI/refind /Volumes/ESP/EFI/BOOT`)
-0. Rename the refind EFI blob (`$ mv /Volumes/ESP/EFI/BOOT/refind_x64.efi /Volumes/ESP/EFI/BOOT/bootx64.efi`)
-0. Reboot and see if your problem is fixed.
+1. Mount your EFI System Partition (ESP), which is where rEFInd is installed. (`$ sudo ./mountesp`)
+1. Rename the refind directory (`$ mv /Volumes/ESP/EFI/refind /Volumes/ESP/EFI/BOOT`)
+1. Rename the refind EFI blob (`$ mv /Volumes/ESP/EFI/BOOT/refind_x64.efi /Volumes/ESP/EFI/BOOT/bootx64.efi`)
+1. Reboot and see if your problem is fixed.
 
 ## <a id="resources">Additional Resources</a>
 
 * [Elementary Swith From Mac Guide][mac-switch-guide]
+* [Elementary Basics Guide][basics]
 * [Elementary Keyboard Shortcuts ][keyboard-shortcuts]
 * [rEFInd Theme][theme]
 
@@ -151,3 +156,4 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 [brew]: http://linuxbrew.sh/
 [bashit]: https://github.com/Bash-it/bash-it
 [flux]: https://justgetflux.com/linux.html
+[basics]: https://elementary.io/docs/learning-the-basics
