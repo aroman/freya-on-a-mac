@@ -108,7 +108,23 @@ You can install a [theme][theme] to make it look nicer, and there's many options
 
 ## <a id="post-install">Post Install</a>
 
-These are **optional** tweaks that will help you feel more are home.
+Now when you boot to elementaryOS, it is very likely that you will find the screen color calibration does not show the amazing display that you can see on Mac. Don't throw your elementaryOS just yet! This is can be easily fixed.
+
+1. Boot to Mac, go to **Finder** and hit **Command (⌘) + Shift + G**.
+1. Copy and paste `/Library/ColorSync/Profiles/Displays` to the box
+1. You might see one or more files. Look for the file that says **Color LCD**. If there are multiples of it, look for the most recent one.
+1. Copy that file to an external disk.
+1. Boot to elementary OS and paste the file to a folder, e.g. `~/Downloads`.
+1. Go to **System Settings** > **Color** > **Add Profile** > **Other profile...**. 
+1. Navigate to the folder your configuration file is at, then select it.
+1. In some cases, the dropdown box might show blank. You can just ignore and click on **Add** anyway.
+1. If it is not already, tick the **Color LCD** configuration in the options.
+
+Voila! Your screen should feel exactly like you're on a macOS / OS X.
+
+In case you still find it not satisfying, you can look up other tweaks to be done [here][more-tweaks].
+
+These are more **optional** tweaks that will help you feel more are home.
 
 [MacOS Modifier keys ][mac-os-keys] <small>create macOS like keyboard bindings </small>
 
@@ -147,6 +163,7 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 [timemachine]: https://support.apple.com/en-us/HT201250
 [elementary]: https://elementary.io
 [etcher]: https://etcher.io/
+[more-tweaks]: https://www.reddit.com/r/elementaryos/comments/38e5aq/elementaryos_on_macbook_pro/crvsrt3/
 [mac-os-keys]: https://elementaryos.stackexchange.com/questions/7889/use-macos-style-modifier-keys
 [install-medium]: https://elementary.io/docs/installation#creating-an-installation-medium
 [keyboard-shortcuts]: http://lmelinux.net/2014/07/26/elementary-os-keyboard-shortcuts/
