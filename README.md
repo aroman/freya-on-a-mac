@@ -111,7 +111,8 @@ You can install a [theme][theme] to make it look nicer, and there's many options
 Now when you boot to elementaryOS, it is very likely that you will find the screen color calibration does not show the amazing display that you can see on Mac. Don't throw your elementaryOS just yet! This is can be easily fixed.
 
 1. Boot to Mac, go to **Finder** and hit **Command (⌘) + Shift + G**.
-1. Copy and paste `/Library/ColorSync/Profiles/Displays` to the box
+1. Copy and paste `/Library/ColorSync/Profiles/Displays` to the box.
+    ![icc-path](img/icc-path.png)
 1. You might see one or more files. Look for the file that says **Color LCD**. If there are multiples of it, look for the most recent one.
 1. Copy that file to an external disk.
 1. Boot to elementary OS and paste the file to a folder, e.g. `~/Downloads`.
