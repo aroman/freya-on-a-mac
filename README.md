@@ -123,17 +123,15 @@ Now when you boot to elementaryOS, it is very likely that you will find the scre
 
 Voila! Your screen should feel exactly like you're on a macOS / OS X.
 
-In case you still find it not satisfying, you can look up other tweaks to be done [here][more-tweaks].
+In case you still find it not satisfying, you can look up other tweaks to be done [here][more-tweaks]. Along with that, these are more **optional** tweaks that will help you feel more are home.
 
-These are more **optional** tweaks that will help you feel more are home.
+- [MacOS Modifier keys ][mac-os-keys] <small>create macOS like keyboard bindings </small>
 
-[MacOS Modifier keys ][mac-os-keys] <small>create macOS like keyboard bindings </small>
+- [f.lux][flux] <small>plugin to help alleviate eye-strain</small>
 
-[f.lux][flux] <small>plugin to help alleviate eye-strain</small>
+- [bash-it][bashit] <small>make your bash shell awesome</small>
 
-[bash-it][bashit] <small>make your bash shell awesome</small>
-
-[linux-brew][brew] <small>package manager for linux</small>
+- [linux-brew][brew] <small>package manager for linux</small>
 
 ## <a id="troubleshooting">Troubleshooting</a>
 
