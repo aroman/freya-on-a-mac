@@ -108,22 +108,25 @@ You can install a [theme][theme] to make it look nicer, and there's many options
 
 ## <a id="post-install">Post Install</a>
 
-Now when you boot to elementaryOS, it is very likely that you will find the screen color calibration does not show the amazing display that you can see on Mac. Don't throw your elementaryOS just yet! This is can be easily fixed.
-
-1. Boot to Mac, go to **Finder** and hit **Command (⌘) + Shift + G**.
-1. Copy and paste `/Library/ColorSync/Profiles/Displays` to the box.
-    ![icc-path](img/icc-path.png)
-1. You might see one or more files. Look for the file that says **Color LCD**. If there are multiples of it, look for the most recent one.
-1. Copy that file to an external disk.
-1. Boot to elementary OS and paste the file to a folder, e.g. `~/Downloads`.
-1. Go to **System Settings** > **Color** > **Add Profile** > **Other profile...**. 
-1. Navigate to the folder your configuration file is at, then select it.
-1. In some cases, the dropdown box might show blank. You can just ignore and click on **Add** anyway.
-1. If it is not already, tick the **Color LCD** configuration in the options.
-
-Voila! Your screen should feel exactly like you're on a macOS / OS X.
-
 In case you still find it not satisfying, you can look up other tweaks to be done [here][more-tweaks]. Along with that, these are more **optional** tweaks that will help you feel more are home.
+
+- <small>improve display color reproduction accuracy</small>
+
+You may find that the color reproduction of your display is not as accurate as under macOS. This is can be easily fixed by installing the correct [ICC profile](https://en.wikipedia.org/wiki/ICC_profile) for your laptop.
+
+1. Boot into macOS and open **Finder**. Then press **Command (⌘) + Shift + G**.
+1. Copy and paste `/Library/ColorSync/Profiles/Displays` to the dialog box.
+    ![icc-path](img/icc-path.png)
+1. You might see one or more files. Look for the file that says **Color LCD**. If multiple files say this, choose the most recently modified one.
+    ![icc-files](img/icc-files.png)
+1. Copy that file somewhere you can access it elementary OS. You could email it to yourself, upload it somewhere, or copy it to a flash drive.
+1. Boot to elementary OS and open **System Settings**.
+1. Choose **Color** > **Add Profile** > **Other profile...**. 
+1. Navigate to whereever you saved your ICC profile and choose it.
+1. In some cases, the dropdown box might show blank. You can just ignore and click on **Add** anyway.
+1. Make sure the **Color LCD** configuration in the **Color** system settings panel is ticked.
+
+Voilà! Your display should reproduce colors as accurately as under macOS.
 
 - [MacOS Modifier keys ][mac-os-keys] <small>create macOS like keyboard bindings </small>
 
