@@ -138,7 +138,7 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 
 ## <a id="resources">Additional Resources</a>
 
-* [Elementary Swith From Mac Guide][mac-switch-guide]
+* [Guide to switch to Elementary from Mac][mac-switch-guide]
 * [Elementary Basics Guide][basics]
 * [Elementary Keyboard Shortcuts ][keyboard-shortcuts]
 * [rEFInd Theme][theme]
