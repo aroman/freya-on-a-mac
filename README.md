@@ -124,7 +124,7 @@ These are **optional** tweaks that will help you feel more are home.
 
 Sometimes Wi-Fi might not work out-of-the-box because the necessary driver isn't installed. In some cases, you'll be able to install them manually.
 
-- *Somehow* get a temporary internet connection, e.g. via your smartphone's USB or Bluetooth tethering function or (*not tested yet!*) a [Thunderbold to RJ45 adapter](http://store.apple.com/us/product/MD463ZM/A/thunderbolt-to-gigabit-ethernet-adapter)
+- *Somehow* get a temporary internet connection, e.g. via your smartphone's USB or Bluetooth tethering function or a [Thunderbolt to RJ45 adapter](http://store.apple.com/us/product/MD463ZM/A/thunderbolt-to-gigabit-ethernet-adapter) (Thunderbolt ethernet works well with 0.4.1 Loki)
 - Run `$ sudo apt install bcmwl-kernel-source` to install the driver and its dependencies.
 
 ### It takes ~30 seconds for the rEFInd menu to show up.
