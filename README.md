@@ -150,7 +150,7 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 [mac-os-keys]: https://elementaryos.stackexchange.com/questions/7889/use-macos-style-modifier-keys
 [install-medium]: https://elementary.io/docs/installation#creating-an-installation-medium
 [keyboard-shortcuts]: http://lmelinux.net/2014/07/26/elementary-os-keyboard-shortcuts/
-[mac-switch-guide]: http://blog.elementary.io/post/152626170946/switching-from-macos-the-basics
+[mac-switch-guide]: https://blog.elementary.io/switching-from-macos-the-basics/
 [theme]: http://sdbinwiiexe.deviantart.com/art/rEFInd-Next-Theme-407754566
 [flash]: https://en.wikipedia.org/wiki/USB_flash_drive
 [brew]: http://linuxbrew.sh/
