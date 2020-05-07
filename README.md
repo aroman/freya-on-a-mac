@@ -136,6 +136,15 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 1. Rename the refind EFI blob (`$ mv /Volumes/ESP/EFI/BOOT/refind_x64.efi /Volumes/ESP/EFI/BOOT/bootx64.efi`)
 1. Reboot and see if your problem is fixed.
 
+### After booting installation USB screen remains black
+
+If the screen remains black after booting from the installation USB, try the following steps:
+
+1. When the boot menu with the elementary OS logo appears enter the boot options
+1. Change the options `quite splash` to `nomodeset` and boot
+
+That solution is an extract of a [StackExchange answer][se-black-screen].
+
 ## <a id="resources">Additional Resources</a>
 
 * [Guide to switch to Elementary from Mac][mac-switch-guide]
@@ -157,3 +166,4 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 [bashit]: https://github.com/Bash-it/bash-it
 [flux]: https://justgetflux.com/linux.html
 [basics]: https://elementary.io/docs/learning-the-basics
+[se-black-screen]: https://elementaryos.stackexchange.com/questions/8177/black-screen-when-installing-os
