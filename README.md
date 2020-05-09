@@ -140,8 +140,8 @@ This is a known compatibility issue with rEFInd and some Mac hardware models. If
 
 If the screen remains black after booting from the installation USB, try the following steps:
 
-1. When the boot menu with the elementary OS logo appears enter the boot options
-1. Change the options `quite splash` to `nomodeset` and boot
+1. When the boot menu with the elementary OS logo appears enter the boot menu
+1. Change the boot parameters `quiet splash` to `nomodeset` and continue booting
 
 That solution is an extract of a [StackExchange answer][se-black-screen].
 
